@@ -2,6 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { SiFreelancer } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
+import cybertruck from "@/public/cybertruck.png";
+import Ecars from "@/public/Ecars.png";
+import Shineagro from "@/public/shineagro.png";
+import Greatlart from "@/public/greatlark.png";
+import Hoobank from "@/public/hoobank.png";
 
 export const links = [
   {
@@ -59,30 +64,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "E-Cars",
-    description:
-      "My first ever project when I was starting my journey of development.",
-    tags: ["HTML", "CSS", "JS", "Splide.js"],
-    // projectLink: ""
-    // imageUrl: corpcommentImg,
-    category: "Frontend",
-  },
-  {
-    title: "Hoobank",
-    description:
-      "I was sharping my React, TailwindCss and Framer motion skills on this beautiful project of bank website.",
-    tags: ["ReactJs", "Tainwind Css", "Framer Motion"],
-    // projectLink: ""
-    // imageUrl: corpcommentImg,
-    category: "Frontend",
-  },
-  {
     title: "Shine-agro-tech",
     description:
       "I worked as a freelancer on this project which was related to agricultural based company.",
     tags: ["Webflow", "Finsweet attrs", "Gsap"],
     // projectLink: ""
-    // imageUrl: corpcommen
+    imageUrl: Shineagro,
     category: "Freelance",
   },
   {
@@ -91,8 +78,17 @@ export const projectsData = [
       "I developed this website for client whose main work was related to business finance.",
     tags: ["Webflow", "Finsweet attrs", "Gsap", "Figma"],
     // projectLink: ""
-    // imageUrl: corpcommen
+    imageUrl: Greatlart,
     category: "Freelance",
+  },
+  {
+    title: "Hoobank",
+    description:
+      "I was sharping my React, TailwindCss and Framer motion skills on this beautiful project of bank website.",
+    tags: ["ReactJs", "Tainwind Css", "Framer Motion"],
+    // projectLink: ""
+    imageUrl: Hoobank,
+    category: "Frontend",
   },
   {
     title: "Cybertruck clone",
@@ -100,7 +96,16 @@ export const projectsData = [
       "Just when I was starting my journey with freelancing and low-code webflow development I built this clone of Tesla Cybertruck website",
     tags: ["Webflow", "Finsweet attrs"],
     // projectLink: ""
-    // imageUrl: corpcommen
+    imageUrl: cybertruck,
+    category: "Frontend",
+  },
+  {
+    title: "E-Cars",
+    description:
+      "My first ever project when I was starting my journey of development.",
+    tags: ["HTML", "CSS", "JS", "Splide.js"],
+    // projectLink: ""
+    imageUrl: Ecars,
     category: "Frontend",
   },
 ] as const;
