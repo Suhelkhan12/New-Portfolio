@@ -41,7 +41,7 @@ const Divider = () => {
         />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial="offscreen"
         whileInView="onscreen"
         variants={imgVariants}
@@ -53,7 +53,7 @@ const Divider = () => {
           priority={true}
           className="px-3 py-2 sm:py-0 opacity-50 object-cover"
         />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

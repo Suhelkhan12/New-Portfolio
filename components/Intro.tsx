@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaReact } from "react-icons/fa";
 
 export default function Intro() {
   return (

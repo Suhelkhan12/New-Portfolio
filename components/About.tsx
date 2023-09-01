@@ -1,29 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import SectionHeading from "./SectionHeading";
-import { motion, Variants } from "framer-motion";
-
-const aboutVariants: Variants = {
-  offscreen: {
-    y: 100,
-  },
-  onscreen: {
-    y: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 1,
-    },
-  },
-};
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <motion.section
-      initial="offscreen"
-      whileInView="onscreen"
-      variants={aboutVariants}
-      className="mt-[5rem] mb-[5rem] max-w-[45rem] text-center leading-8 sm:mb-15"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        delay: 1,
+      }}
+      className="mt-[5rem] mb-[5rem] max-w-[45rem] text-center leading-8 sm:mb-15 relative z-20"
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3 sm:px-0 px-5">

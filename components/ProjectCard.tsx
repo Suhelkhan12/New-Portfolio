@@ -3,6 +3,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { projectsData } from "@/lib/data";
 import React, { useRef } from "react";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
 type ProjectCardProps = (typeof projectsData)[number];
 
@@ -29,10 +31,10 @@ export default function ProjectCard({
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="group mb-3 sm:mb-8 last:mb-0 "
+      className="group mb-3 sm:mb-2 last:mb-0 "
     >
       <section className=" bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] relative mb-3 sm:mb-8 last:mb-0  rounded-[12px] hover:shadow-xl hover:bg-gray-200 group-even:pl-8 transition">
-        <div className="py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col group-even:ml-[18rem]">
+        <div className="py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col group-even:ml-[18rem] h-full">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 ">
@@ -45,6 +47,16 @@ export default function ProjectCard({
               </li>
             ))}
           </ul>
+
+          <div className="mt-auto hidden group-hover:block group">
+            <Link
+              href="#"
+              className="group w-[100px] bg-gray-900 text-white flex justify-center items-center gap-2 py-1 rounded-full 
+          "
+            >
+              See <BsArrowRight className="group-hover: translate-x-2" />
+            </Link>
+          </div>
         </div>
 
         <Image

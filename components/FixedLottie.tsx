@@ -11,7 +11,7 @@ export default function FixedLottie() {
         delay: 1,
         ease: "easeIn",
       }}
-      className="w-[300px] h-[300px] fixed bottom-[12px] right-[24px] xl:block hidden"
+      className="w-[250px] h-[250px]  xl:block hidden z-999"
     >
       <Player
         src="https://lottie.host/51a7a190-1b8b-4494-be4c-69e070b91e0f/B5E4v3px7U.json"
