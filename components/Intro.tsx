@@ -1,16 +1,35 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Suhel from "@/public/Suhel.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useActiveSectionContext } from "@/context/ActiveSectionContextProvider";
+import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
+  const { setActiveSection } = useActiveSectionContext();
+
+  const { ref, inView } = useInView({
+    threshold: 0.15,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inView]);
+
   return (
-    <section className="mb-2 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      ref={ref}
+      className=" scroll-mt-32 mb-2 max-w-[50rem] text-center sm:mb-0"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -68,7 +87,7 @@ export default function Intro() {
         }}
       >
         <Link
-          href="#contact"
+          href="mailto:suhelkhan9588321151@gmail.com"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none transition hover:bg-gray-950 active:scale-95
           "
         >

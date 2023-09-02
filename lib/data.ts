@@ -37,14 +37,6 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Master's of computer applications",
-    location: "Chandigarh, India",
-    description:
-      "Currently I'm in final year of my master's degree where I got to learn a lot of new technologies and made different projects with every semester",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021",
-  },
-  {
     title: "UI Engineer Intern",
     location: "Banglore, India",
     description:
@@ -59,6 +51,14 @@ export const experiencesData = [
       "Side by Side with my college and ongoing internship I also decided to go into Freelancing and learn about how the freelance world works and it is going pretty smooth till now.",
     icon: React.createElement(SiFreelancer),
     date: "2023 - present",
+  },
+  {
+    title: "Master's of computer applications",
+    location: "Chandigarh, India",
+    description:
+      "Currently I'm in final year of my master's degree where I got to learn a lot of new technologies and made different projects with every semester",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021-present",
   },
 ] as const;
 
@@ -117,11 +117,12 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "React",
+  "Framer Motion",
+  "Figma",
   "Tailwind",
+  "Gsap",
   "Node.js",
   "Express",
   "Git",
-  "Gsap",
-  "C++(For LeetCode)",
-  "Figma",
+  "C++ (For LeetCode)",
 ] as const;
