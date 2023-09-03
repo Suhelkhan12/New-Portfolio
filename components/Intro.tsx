@@ -28,7 +28,7 @@ export default function Intro() {
     <section
       id="home"
       ref={ref}
-      className=" scroll-mt-32 mb-2 max-w-[50rem] text-center sm:mb-0"
+      className=" scroll-mt-32 mb-2 max-w-[50rem] text-center sm:mb-0 dark:text-gray-100 "
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -98,7 +98,7 @@ export default function Intro() {
         <a
           href="/SuhelCV.pdf"
           className="group bg-white  px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none transition hover:bg-gray-100
-           active:scale-95 border border-black/20"
+           active:scale-95 border border-black/20 dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="group-hover:translate-y-1 transition hover:text-gray-950" />
@@ -108,7 +108,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/suhel-khan-925aa222a/"
           target="_blank"
           className="group bg-white p-4 text-gray-700 flex justify-center items-center gap-2 rounded-full transition hover:bg-gray-100
-          active:scale-95 border border-black/20"
+          active:scale-95 border border-black/20 dark:bg-white/10 dark:text-gray-100"
         >
           <BsLinkedin className="group-hover:scale-110 group-hover:text-gray-950 transition" />
         </a>
@@ -116,7 +116,7 @@ export default function Intro() {
           href="https://github.com/Suhelkhan12"
           target="_blank"
           className="group bg-white p-4 text-gray-700 flex justify-center items-center gap-2 rounded-full transition hover:bg-gray-100
-          active:scale-95 border border-black/20"
+          active:scale-95 border border-black/20 dark:bg-white/10 dark:text-gray-100"
         >
           <BsGithub className="group-hover:scale-110 group-hover:text-gray-950 transition" />
         </a>

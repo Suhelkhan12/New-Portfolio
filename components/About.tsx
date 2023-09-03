@@ -4,11 +4,12 @@ import { useInView } from "react-intersection-observer";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 import { useActiveSectionContext } from "@/context/ActiveSectionContextProvider";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Bg from "@/public/vsBg.svg";
 
 export default function About() {
+  const imageRef = useRef<HTMLDivElement | null>(null);
   //IMP
   // react k intersection observer se hme ek useInview hooks milta h jo hme ek to ref return krta hai us section k liye and ek varriable retrn krta hai jis se hme pta chlta hai ki vo particular section view me aaya ya nahi aya
   const { ref, inView } = useInView({
@@ -23,6 +24,17 @@ export default function About() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
 
+  useEffect(() => {
+    const theme = window.localStorage.getItem("theme");
+
+    if (theme === "dark") {
+      // Hide the image by setting its style display property to 'none'
+      if (imageRef.current) {
+        imageRef.current.style.display = "none";
+      }
+    }
+  }, []);
+
   return (
     <motion.section
       ref={ref}
@@ -32,7 +44,7 @@ export default function About() {
         delay: 1,
       }}
       id="about"
-      className="mt-[5rem] mb-[5rem] max-w-[45rem] text-center leading-8 sm:mb-15 relative scroll-mt-28"
+      className="mt-[5rem] mb-[5rem] max-w-[45rem] text-center leading-8 sm:mb-15 relative scroll-mt-28 dark:text-white/70"
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3 sm:px-0 px-5">
@@ -65,7 +77,11 @@ export default function About() {
         am always looking to learn a new technology.
       </p>
 
-      <motion.div className="sm:flex sm:justify-center sm:items-center sm:-mt-4 sm:relative z-0 sm:opacity-50 hidden ">
+      <motion.div
+        ref={imageRef}
+        // className="sm:flex sm:justify-center sm:items-center sm:-mt-4 sm:relative z-0 sm:opacity-50 hidden relative "
+        className="hidden"
+      >
         <Image
           src={Bg}
           alt="backgroundImg"

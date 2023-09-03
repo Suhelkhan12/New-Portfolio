@@ -58,7 +58,7 @@ export default function Skills() {
             custom={ind}
             onAnimationComplete={() => setSkillsInView(true)}
             key={ind}
-            className="bg-white border border-black/[0.2] px-5 py-2 rounded"
+            className="bg-white border border-black/[0.2] px-5 py-2 rounded dark:bg-white/10 dark:text-white/80"
           >
             {" "}
             {skill}
@@ -71,7 +71,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.75,
+            delay: 1.25,
             type: "spring",
           }}
           className="flex justify-center items-center"

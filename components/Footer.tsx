@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section className="mb-4">
-      <div className=" flex justify-start items-center gap-2 px-[1rem] py-[0.69rem] rounded-lg bg-gray-200 border border-black/10 ">
+    <footer className="mb-4 flex justify-center items-center">
+      <div className=" flex justify-start items-center gap-2 px-[1rem] py-[0.69rem] rounded-lg bg-gray-200 border border-black/10  max-w-[20rem] dark:bg-gray-950 dark:text-white/70 ">
         <p className="text-[14px]">Cooked with love in </p>
         <IndiaFlagLottie />
         <p className="text-[14px]"> with </p>
@@ -28,6 +28,6 @@ export default function Footer() {
           className="w-[20px] h-[20px]"
         ></Image>
       </div>
-    </section>
+    </footer>
   );
 }

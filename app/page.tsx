@@ -7,6 +7,7 @@ import Project from "@/components/Project";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Theme from "@/components/Theme";
 
 export default function Home() {
   return (
@@ -18,7 +19,6 @@ export default function Home() {
       <Skills />
       <Experience />
       <Contact />
-      <Footer />
     </main>
   );
 }

@@ -53,7 +53,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact</SectionHeading>
 
-      <div className="mt-[3.5rem] sm:p-[1.75rem] p-[1.5rem] flex justify-between items-start gap-5 rounded-lg bg-gray-100 border border-black/10 backdrop-blur-md ">
+      <div className="mt-[3.5rem] sm:p-[1.75rem] p-[1.5rem] flex justify-between items-start gap-5 rounded-lg bg-gray-100 border border-black/10 backdrop-blur-md dark:bg-gray-950 ">
         <div className="h-full flex flex-col justify-between">
           <div className=" flex justify-start items-center gap-4 ">
             <Image
@@ -64,26 +64,30 @@ export default function Contact() {
             ></Image>
 
             <div
-              className="flex justify-center items-center gap-2 px-[1.25rem] py-[0.75rem] rounded-full bg-slate-300 bg-opacity-40 backdrop-blur-lg
+              className="flex justify-center items-center gap-2 border border-black/10 px-[1.25rem] py-[0.75rem] rounded-full bg-slate-300 bg-opacity-40 backdrop-blur-lg dark:text-gray-100 dark:bg-gray-800
           "
             >
-              <div className=" rounded-full w-[8px] h-[8px] bg-green-500 "></div>
+              <div className=" rounded-full w-[8px] h-[8px] bg-green-500  "></div>
               <p className="text-[14px] font-medium">Available to work</p>
             </div>
           </div>
-          <div className="mt-[1rem] flex justify-start items-center gap-4">
+          <div className="mt-[1rem] flex justify-start items-center gap-4 dark:text-gray-100 ">
             <p>Drop me a line or say 👋 on social networks</p>
 
             <div className="flex justify-start items-center gap-3">
-              <BsGithub className="text-[1.25rem]" />
-              <BsLinkedin className="text-[1.25rem]" />
+              <a href="">
+                <BsGithub className="text-[1.25rem] " />
+              </a>
+              <a href="">
+                <BsLinkedin className="text-[1.25rem] " />
+              </a>
             </div>
           </div>
 
           <div className="sm:max-w-[15rem] w-full mt-[1rem]">
             <Link
               href="mailto:suhelkhan9588321151@gmail.com"
-              className="group  bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-[0.5rem] outline-none transition hover:bg-gray-950 active:scale-95
+              className="group  bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 rounded-[0.5rem] outline-none transition hover:bg-gray-950 active:scale-95 dark:hover:bg-gray-800
           "
             >
               Let's talk work{" "}
