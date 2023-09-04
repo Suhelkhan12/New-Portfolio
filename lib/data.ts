@@ -68,7 +68,7 @@ export const projectsData = [
     description:
       "I worked as a freelancer on this project which was related to agricultural based company.",
     tags: ["Webflow", "Finsweet attrs", "Gsap"],
-    // projectLink: ""
+    projectLink: "https://shine-agro.webflow.io/",
     imageUrl: Shineagro,
     category: "Freelance",
   },
@@ -77,7 +77,7 @@ export const projectsData = [
     description:
       "I developed this website for client whose main work was related to business finance.",
     tags: ["Webflow", "Finsweet attrs", "Gsap", "Figma"],
-    // projectLink: ""
+    projectLink: "https://greatlark.webflow.io/",
     imageUrl: Greatlart,
     category: "Freelance",
   },
@@ -86,7 +86,7 @@ export const projectsData = [
     description:
       "I was sharping my React, TailwindCss and Framer motion skills on this beautiful project of bank website.",
     tags: ["ReactJs", "Tainwind Css", "Framer Motion"],
-    // projectLink: ""
+    projectLink: "https://main--moonlit-crumble-3a59c9.netlify.app/",
     imageUrl: Hoobank,
     category: "Frontend",
   },
@@ -95,7 +95,7 @@ export const projectsData = [
     description:
       "Just when I was starting my journey with freelancing and low-code webflow development I built this clone of Tesla Cybertruck website",
     tags: ["Webflow", "Finsweet attrs"],
-    // projectLink: ""
+    projectLink: "https://cybertruck-suhel.webflow.io/",
     imageUrl: cybertruck,
     category: "Frontend",
   },
@@ -104,7 +104,7 @@ export const projectsData = [
     description:
       "My first ever project when I was starting my journey of development.",
     tags: ["HTML", "CSS", "JS", "Splide.js"],
-    // projectLink: ""
+    projectLink: "https://dulcet-paletas-64953e.netlify.app/",
     imageUrl: Ecars,
     category: "Frontend",
   },
