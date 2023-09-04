@@ -12,8 +12,8 @@ export default function ProjectCard({
   title,
   description,
   tags,
+  projectLink,
   imageUrl,
-  category,
 }: ProjectCardProps) {
   // useRef for targeting the element in react
   const ref = useRef<HTMLDivElement>(null);
@@ -52,7 +52,7 @@ export default function ProjectCard({
 
           <div className="sm:mt-auto hidden group-hover:block group  mt-[20px]">
             <Link
-              href="#"
+              href={`${projectLink}`}
               className="group w-[100px] bg-gray-900 text-white flex justify-center items-center gap-2 py-1 rounded-full 
           "
             >
