@@ -71,6 +71,7 @@ export const projectsData = [
     projectLink: "https://shine-agro.webflow.io/",
     imageUrl: Shineagro,
     category: "Freelance",
+    type: "Freelance",
   },
   {
     title: "GreatLark",
@@ -80,6 +81,7 @@ export const projectsData = [
     projectLink: "https://greatlark.webflow.io/",
     imageUrl: Greatlart,
     category: "Freelance",
+    type: "Freelance",
   },
   {
     title: "Hoobank",
@@ -89,6 +91,7 @@ export const projectsData = [
     projectLink: "https://main--moonlit-crumble-3a59c9.netlify.app/",
     imageUrl: Hoobank,
     category: "Frontend",
+    type: "Self",
   },
   {
     title: "Cybertruck clone",
@@ -98,6 +101,7 @@ export const projectsData = [
     projectLink: "https://cybertruck-suhel.webflow.io/",
     imageUrl: cybertruck,
     category: "Frontend",
+    type: "Self",
   },
   {
     title: "E-Cars",
@@ -107,6 +111,7 @@ export const projectsData = [
     projectLink: "https://dulcet-paletas-64953e.netlify.app/",
     imageUrl: Ecars,
     category: "Frontend",
+    type: "Self",
   },
 ] as const;
 
