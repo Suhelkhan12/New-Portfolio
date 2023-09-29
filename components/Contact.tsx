@@ -60,7 +60,7 @@ export default function Contact() {
               src={Suhel}
               alt="Suhel"
               priority={true}
-              className=" object-cover w-12 h-12 rounded-full "
+              className=" object-cover w-14 h-14 rounded-full "
             ></Image>
 
             <div
