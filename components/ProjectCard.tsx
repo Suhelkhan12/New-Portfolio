@@ -50,14 +50,15 @@ export default function ProjectCard({
             ))}
           </ul>
 
-          <div className="sm:mt-auto hidden group-hover:block group  mt-[20px]">
+          <div className="sm:mt-auto  mt-[20px] ">
             <a
               href={`${projectLink}`}
               target="_blank"
               className="group w-[100px] bg-gray-900 text-white flex justify-center items-center gap-2 py-1 rounded-full 
           "
             >
-              See <BsArrowRight className="group-hover:translate-x-[12px]" />
+              See{" "}
+              <BsArrowRight className="transition group-hover:translate-x-[8px] duration-300" />
             </a>
           </div>
         </div>
