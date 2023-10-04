@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Suhel from "@/public/Suhel.jpg";
+import Circles from "@/public/circles.png";
+import CirclesDark from "@/public/circles-dark-new.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
@@ -28,7 +30,7 @@ export default function Intro() {
     <section
       id="home"
       ref={ref}
-      className=" scroll-mt-32 mb-2 max-w-[50rem] text-center sm:mb-0 dark:text-gray-100 "
+      className=" scroll-mt-32 mb-2 max-w-[50rem] text-center sm:mb-0 dark:text-gray-100 relative "
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -64,7 +66,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl "
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl relative z-20 "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -78,7 +80,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="sm:flex sm:justify-center sm:align-center sm:gap-2.5 grid grid-cols-1 gap-2 px-2 text-base font-medium
+        className="sm:flex sm:justify-center sm:align-center sm:gap-2.5 grid grid-cols-1 gap-2 px-2 text-base font-medium relative z-30
       "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}

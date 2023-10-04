@@ -1,10 +1,12 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContextProvider";
 import Theme from "@/components/Theme";
 import Footer from "@/components/Footer";
 import ThemeContextProvider from "@/context/ThemeContextProvider";
+import Circles from "@/public/circles-15.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +23,17 @@ export default function RootLayout({ children }: Children) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-24 sm:pt-32 dark:bg-gray-900 dark:text-gray-500 dark:text-opacity-90 `}
+        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-24 sm:pt-32 dark:bg-gray-900 dark:text-gray-500 dark:text-opacity-90 flex flex-col justify-center items-center`}
       >
         <div className="bg-[#fbe2e3] absolute -z-10 top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946363]"></div>
         <div className="bg-[#dbd7fb] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394] "></div>
+
+        <Image
+          src={Circles}
+          alt={"bg circle image"}
+          className="animate-spin absolute top-4 sm:block hidden"
+        />
+
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
