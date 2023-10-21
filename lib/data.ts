@@ -88,7 +88,7 @@ export const projectsData = [
     title: "The Raydee Cafe",
     description:
       "This project was realy close to my heart. One of my friend decided to do a startup called The Raydee Cafe and he wanted a single-page website for his business",
-    tags: ["Webflow", "Finsweet attrs", "Gsap", "Figma"],
+    tags: ["Webflow", "Finsweet attrs"],
     projectLink: "https://the-raydee-cafe.webflow.io/",
     imageUrl: Raydee,
     category: "Freelance",
