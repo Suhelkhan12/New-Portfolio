@@ -7,6 +7,7 @@ import Ecars from "@/public/Ecars.png";
 import Shineagro from "@/public/shineagro.png";
 import Greatlart from "@/public/greatlark.png";
 import Hoobank from "@/public/hoobank.png";
+import Raydee from "@/public/raydee.png";
 
 export const links = [
   {
@@ -79,6 +80,16 @@ export const projectsData = [
       "I developed this website for client whose main work was related to business finance.",
     tags: ["Webflow", "Finsweet attrs", "Gsap", "Figma"],
     projectLink: "https://greatlark.webflow.io/",
+    imageUrl: Raydee,
+    category: "Freelance",
+    type: "Freelance",
+  },
+  {
+    title: "The Raydee Cafe",
+    description:
+      "This project was realy close to my heart. One of my friend decided to do a startup called The Raydee Cafe and he wanted a single-page website for his business",
+    tags: ["Webflow", "Finsweet attrs", "Gsap", "Figma"],
+    projectLink: "https://the-raydee-cafe.webflow.io/",
     imageUrl: Greatlart,
     category: "Freelance",
     type: "Freelance",
