@@ -31,7 +31,7 @@ export default function RootLayout({ children }: Children) {
         <Image
           src={Circles}
           alt={"bg circle image"}
-          className="animate-spin absolute top-4 sm:block hidden"
+          className="animate-spin absolute top-4 lg:block hidden"
         />
 
         <ThemeContextProvider>

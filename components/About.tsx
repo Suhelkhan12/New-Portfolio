@@ -44,10 +44,10 @@ export default function About() {
         delay: 1,
       }}
       id="about"
-      className="mt-[5rem] mb-[5rem] max-w-[45rem] text-center leading-8 sm:mb-15 relative scroll-mt-28 dark:text-white/70"
+      className="mt-[5rem] mb-[5rem]  text-center leading-8 sm:mb-15 relative scroll-mt-28 dark:text-white/70"
     >
       <SectionHeading>About Me</SectionHeading>
-      <p className="mb-3 sm:px-0 px-5">
+      {/* <p className="mb-3 sm:px-0 px-5">
         After graduating with a degree{" "}
         <span className="font-medium"> in Mathematics</span>, I decided to
         pursue my passion for programming. I'm still a{" "}
@@ -75,20 +75,75 @@ export default function About() {
         I'm also familiar with{" "}
         <span className="font-medium">MongoDb, TypeScript and Strapi.</span> I
         am always looking to learn a new technology.
-      </p>
+      </p> */}
 
-      <motion.div
-        ref={imageRef}
-        // className="sm:flex sm:justify-center sm:items-center sm:-mt-4 sm:relative z-0 sm:opacity-50 hidden relative "
-        className="hidden"
-      >
-        <Image
-          src={Bg}
-          alt="backgroundImg"
-          priority={true}
-          className="px-3 py-2 sm:py-0 opacity-50 object-cover"
-        />
-      </motion.div>
+      <div className="mx-auto md:w-[50rem] w-[90%]  bg-gray-800 rounded-md overflow-hidden shadow-xl">
+        <div className="w-full h-6 bg-[#e1e0e2] flex justify-start items-center gap-2 pl-2">
+          <div className="w-[16px] h-[16px] rounded-full bg-[#f96256]"></div>
+          <div className="w-[16px] h-[16px] rounded-full bg-[#fdbc3d]"></div>
+          <div className="w-[16px] h-[16px] rounded-full bg-[#33c948]"></div>
+          <p className="font-mono text-sm text-black font-bold ">About.js</p>
+        </div>
+
+        <div className="md:px-6 md:py-6 p-4 bg-[#5a5d7a] text-left flex flex-col md:gap-6 gap-4">
+          <div className="detail-row w-full  ">
+            <p className=" font-mono md:text-base text-sm text-green-400">
+              &frasl;&frasl; here I am just trying to be creative😁😁😁
+            </p>
+          </div>
+          <div className="detail-row w-full">
+            <p className="text-white font-mono md:text-base text-sm">
+              <span className="text-yellow-200">const Education = &#123;</span>{" "}
+              <br />
+              <span className="px-4">
+                'gratuation': 'Mathematics hons', 'currently': 'MCA'
+              </span>
+              <br />
+              <span className="text-yellow-200">&#125;</span> <br />
+            </p>
+          </div>
+          <div className="detail-row w-full">
+            <p className="text-white font-mono md:text-base text-sm">
+              <span className="text-yellow-200">const Passion = &#123;</span>{" "}
+              <br />
+              <span className="px-4">
+                'first': 'Problem solving', 'second': 'Beautiful UI
+                development',
+                <span className="text-green-400">
+                  &frasl;&frasl;developing some backend skills also🤞🤞🤞
+                </span>
+              </span>
+              <br />
+              <span className="text-yellow-200">&#125;</span> <br />
+            </p>
+          </div>
+          <div className="detail-row w-full">
+            <p className="text-white font-mono md:text-base text-sm">
+              <span className="text-yellow-200">
+                const Multitasking = &#91;
+              </span>
+              <span className="px-2">'Freelancing' ,'College study'</span>
+              <span className="text-yellow-200">&#93;</span> <br />
+            </p>
+          </div>
+          <div className="detail-row w-full">
+            <p className="text-white font-mono md:text-base text-sm">
+              <span className="text-yellow-200">const TechStack = &#91;</span>{" "}
+              <br />
+              'Webflow', 'Finsweet elements', 'ReactJs', 'Redux' , 'React
+              router', 'Java script', 'GSAP', 'Framer motion',
+              <span className="text-green-400 mt-1">
+                {" "}
+                <br /> &frasl;* I'm also familiar with Nodejs, Typescript, SQL ,
+                Mongodb and always learning new tech. *&frasl;
+              </span>
+              <br />
+              <span className="text-yellow-200">&#93;</span> <br />
+            </p>
+          </div>
+          <div className="w-2 h-4 bg-blue-500 animate-blink"></div>
+        </div>
+      </div>
     </motion.section>
   );
 }

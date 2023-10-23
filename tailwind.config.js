@@ -14,8 +14,16 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
 
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: ".5" },
+        },
+      },
+
       animation: {
         spin: "spin 20s linear infinite", // Define a custom animation class
+        blink: "blink 0.8s step-start infinite;",
       },
     },
   },

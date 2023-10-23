@@ -71,7 +71,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 1.25,
+            delay: 1,
             type: "spring",
           }}
           className="flex justify-center items-center"
