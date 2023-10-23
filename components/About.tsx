@@ -77,7 +77,7 @@ export default function About() {
         am always looking to learn a new technology.
       </p> */}
 
-      <div className="mx-auto md:w-[50rem] w-[90%]  bg-gray-800 rounded-md overflow-hidden shadow-xl">
+      <div className="mx-auto lg:w-[50rem] w-[90%]  bg-gray-800 rounded-md overflow-hidden shadow-xl">
         <div className="w-full h-6 bg-[#e1e0e2] flex justify-start items-center gap-2 pl-2">
           <div className="w-[16px] h-[16px] rounded-full bg-[#f96256]"></div>
           <div className="w-[16px] h-[16px] rounded-full bg-[#fdbc3d]"></div>
