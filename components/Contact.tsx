@@ -60,14 +60,14 @@ export default function Contact() {
               src={Suhel}
               alt="Suhel"
               priority={true}
-              className=" object-cover w-14 h-14 rounded-full "
+              className=" object-cover w-14 h-14 rounded-full ring dark:ring-white ring-blue"
             ></Image>
 
             <div
               className="flex justify-center items-center gap-2 border border-black/10 px-[1.25rem] py-[0.75rem] rounded-full bg-slate-300 bg-opacity-40 backdrop-blur-lg dark:text-gray-100 dark:bg-gray-800
           "
             >
-              <div className=" rounded-full w-[8px] h-[8px] bg-green-500  "></div>
+              <div className=" rounded-full w-[8px] h-[8px] bg-green-500 animate-pulse  "></div>
               <p className="text-[14px] font-medium">Available to work</p>
             </div>
           </div>
